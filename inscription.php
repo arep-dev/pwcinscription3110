@@ -75,7 +75,7 @@
 					<span style="color:#ea8c12">Rendez-vous à l'hôtel Mövenpick - 58 Boulevard Victor Hugo, 92200 Neuilly-sur-Seine</span><br><br>
 					<label <?php if(($places['DATE1'] == 0)) {echo 'class="color9"';} ?>><input type="radio" name="date" value="date1" input-type="radio2" class="inputcontact" <?php if(($places['DATE1'] == 0)) {echo 'disabled';} ?>> <span style="margin-right:2px;">Lundi 7 novembre 2016 -</span> <span style="color:#e74f01; font-size: 10pt;">Rencontre & Afterwork de 17h30 à 19h00 <?php if(($places['DATE1'] > 0)) {}else{echo '(session complète)';} ?></span></label>
 
-					<?php if($places['DATE1'] == 0) { ?>
+					<?php echo $places['DATE1']; if($places['DATE1'] == 0) { ?>
 					<label style="margin-bottom:6px;"><input type="radio" name="date" value="date3" input-type="radio2" class="inputcontact"> Je m'inscris sur la liste d’attente en cas de désistement <span style="font-size: 10pt;">(lundi 7 novembre 2016)</span></label>
 					<?php } ?>
 
