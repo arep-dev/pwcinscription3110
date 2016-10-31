@@ -78,7 +78,7 @@
 					$checkDate = 'DATE3';
 					break;	
 				case 'date5':
-					$date = "Je ne pourrai pas être disponible et souhaites être recontacté(e)";
+					$date = "Je ne pourrai pas être disponible et souhaite être recontacté(e)";
 					$checkDate = 'DATE3';
 					break;	
 			}
