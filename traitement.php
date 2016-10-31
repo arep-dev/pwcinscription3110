@@ -1,9 +1,9 @@
 <?php 
 	session_start();
 
-	define('USER', 'arep_CATB');
-	define('HOST', '142.4.214.101');
-	define('PASSWORD', 'arep-sa');
+	define('USER', 'root');
+	define('HOST', 'localhost');
+	define('PASSWORD', 'root');
 	define('DATABASE', 'PWC_INSCRIPTION');
 	
 	if(isset($_POST['login']) && $_POST['login'] == 'ok') {
