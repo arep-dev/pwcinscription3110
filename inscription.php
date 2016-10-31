@@ -74,10 +74,19 @@
 				<span class="zone">
 					<span style="color:#ea8c12">Rendez-vous à l'hôtel Mövenpick - 58 Boulevard Victor Hugo, 92200 Neuilly-sur-Seine</span><br><br>
 					<label <?php if(($places['DATE1'] == 0)) {echo 'class="color9"';} ?>><input type="radio" name="date" value="date1" input-type="radio2" class="inputcontact" <?php if(($places['DATE1'] == 0)) {echo 'disabled';} ?>> <span style="margin-right:2px;">Lundi 7 novembre 2016 -</span> <span style="color:#e74f01; font-size: 10pt;">Rencontre & Afterwork de 17h30 à 19h00 <?php if(($places['DATE1'] > 0)) {}else{echo '(session complète)';} ?></span></label>
-					<label <?php if($places['DATE1'] == 0) {}else{echo 'style="display:none;"';} ?> style="margin-bottom:6px;"><input type="radio" name="date" value="date3" input-type="radio2" class="inputcontact"> Je m'inscris sur la liste d’attente en cas de désistement <span style="font-size: 10pt;">(lundi 7 novembre 2016)</span></label>
+
+					<?php if($places['DATE1'] == 0) { ?>
+					<label style="margin-bottom:6px;"><input type="radio" name="date" value="date3" input-type="radio2" class="inputcontact"> Je m'inscris sur la liste d’attente en cas de désistement <span style="font-size: 10pt;">(lundi 7 novembre 2016)</span></label>
+					<?php } ?>
+
 					<label <?php if(($places['DATE2'] == 0)) {echo 'class="color9"';} ?>><input type="radio" name="date" value="date2" input-type="radio2" class="inputcontact" <?php if(($places['DATE2'] == 0)) {echo 'disabled';} ?>> <span>Mardi 8 novembre 2016 -</span> <span style="color:#e74f01; font-size: 10pt;">Rencontre & Cocktail déjeunâtoire de 12h00 à 13h30 <?php if(($places['DATE2'] > 0)) {}else{echo '(session complète)';} ?></span></label>
-					<label <?php if($places['DATE2'] == 0) {}else{echo 'style="display:none;"';} ?>><input type="radio" name="date" value="date4" input-type="radio2" class="inputcontact"> Je m'inscris sur la liste d’attente en cas de désistement <span style="font-size: 10pt;">(mardi 8 novembre 2016)</span></label>
-					<label><input type="radio" name="date" value="date5" input-type="radio2" class="inputcontact"> Je ne pourrai pas être disponible et souhaites être recontacté(e)</label>
+
+					<?php if($places['DATE2'] == 0) { ?>
+					<label><input type="radio" name="date" value="date4" input-type="radio2" class="inputcontact"> Je m'inscris sur la liste d’attente en cas de désistement <span style="font-size: 10pt;">(mardi 8 novembre 2016)</span></label>
+					<?php } ?>
+
+					<label><input type="radio" name="date" value="date5" input-type="radio2" class="inputcontact"> Je ne pourrai pas être disponible et souhaite être recontacté(e)</label>
+
 					<input type="radio" name="date" value="date6" input-type="radio2" style="display:none;"> 
 				</span>	
 			</p>	
