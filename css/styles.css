@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+/* TEST CHANGE GIT */
 h1 {font-family: Georgia, "Times New Roman"; font-size: 18px; font-weight: bold; margin: 0 0 5px 0; letter-spacing: 0.002em; line-height: 1.25em; padding-top: 5px; color: #dc6900; border-top: 4px solid #dc6900; float:left; width:100%;}
 h2{float:left; width:100%; font-size:12px; margin:0 0 20px 0; font-weight:normal;}
 html, body {background-color: #f2f2f2; background:url(../img/background.jpg) no-repeat top center; margin:0; padding: 0px !important; font-family: Georgia, "Times New Roman"; font-size:12pt;}
